@@ -14,29 +14,16 @@ body {
 
 }
 
-#time-title {
-    justify-self: center;
-    position: absolute;
-    bottom: 530px;
-    font-size: 70px;
-    color: white;
-    text-shadow: 4px 4px grey;
-}
 
 .clock-header {
     justify-self: center;
     position: absolute;
-    top: 540px;
-    font-size: 70px;
+    font-size: 10rem;
     color: white;
+    opacity: .09;
     text-shadow: 4px 4px grey;
 }
 
-.clock-container {
-    position: relative;
-    display: flex;
-
-}
 .clock {
     position: relative;
     width: 300px;
@@ -91,7 +78,7 @@ body {
     content: "";
     position: absolute;
     background-color: #78766f;
-    z-index: 16;
+    z-index: 11;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -100,17 +87,17 @@ body {
     transform: translate(-50% , -50%);
 }
 
-.clock .hour-hand {
+.clock .hand.hour {
     width: 6px;
-    height: 35%;
+    height: 30%;
 }
 
-.clock .minute-hand {
+.clock .hand.minute{
     width: 6px;
     height: 40%;
 }
 
-.clock .sec-hand {
+.clock .hand.second {
     z-index: 9;
     width: 2px;
     height: 48%;
